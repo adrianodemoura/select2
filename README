@@ -1,0 +1,18 @@
+============================
+Select 2
+----------------------------
+
+- Intall
+
+$ cd you_app_cake2
+$ vim composer.json
+add in require line:
+
+"adrianodemoura/select2": "*"
+
+In bootstrap.php, add:
+CakePlugin::load('Select2', ['bootstrap'=>true]);
+
+$ compuser update
+
+enjoy !
