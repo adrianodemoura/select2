@@ -10,9 +10,29 @@ add in require line:
 
 "adrianodemoura/select2": "*"
 
-In bootstrap.php, add:
+$ composer update
+
+- Usage
+
+In bootstrap.php:
+
 CakePlugin::load('Select2', ['bootstrap'=>true]);
 
-$ compuser update
+in controller:
 
-enjoy !
+<?php
+class AppController extends Controller {
+ 
+    public $helpers = ['Form', 'Html', 'Js', 'Time', 'Select2.S2Form'];
+
+?>
+
+or inside view:
+
+<?php
+
+	$this->Helpers->load('Select2.S2Form');
+
+	echo $this->S2Form->input('Model.campo', ['label'=>false, width'=>'resolve', 'style'=>'min-width: 200px;', 'ajax'=>['url'=>'http://site.com.br/cadastro/get_lista']]);
+
+?>

@@ -7,7 +7,7 @@
  */
 App::uses('Helper', 'View');
 /**
- * Mantém o plugin Select2
+ * Keep the select2 plugin
  */
 class Select2AppHelper extends AppHelper {
 }

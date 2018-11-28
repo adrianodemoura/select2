@@ -1,6 +1,6 @@
 {
 	"name": "adrianodemoura/select2",
-	"description": "Elemento Select2 to cakephp 2.x",
+	"description": "Element Select2 to cakephp 2.x",
 	"type": "cakephp-plugin",
 	"keywords": ["cakephp", "select2"],
 	"homepage": "https://github.com/adrianodemoura/select2",

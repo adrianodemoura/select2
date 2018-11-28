@@ -1,15 +1,15 @@
 /**
- * Trata o retorno do element select2
+ * Handle the return of element select2.
  *
- * param 	resposta 	Matriz com os dados a serem tratados.
- * return 	results 	Mariz com o resultado tratado.
+ * @param 	response 	Array with response of server.
+ * @return 	results 	Array in format id.text
  */
-function retornaRespostaSelect2(resposta)
+function returnResponsSelect2(response)
 {
-	let resultado = [{id: resposta.status, text: resposta.msg}];
-	if (resposta.status)
+	let resultado = [{id: response.status, text: response.msg}];
+	if (response.status)
 	{
-		resultado = $.map(resposta.lista, function(obj, i)
+		resultado = $.map(response.lista, function(obj, i)
 		{
 			return { id: i, text: obj };
 		});
