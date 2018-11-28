@@ -13,7 +13,7 @@ App::uses('Select2AppHelper', 'Select2.View/Helper');
  *
  * $this->Helpers->load('Select2.S2Form');
  *
- * echo $this->S2Form->input('Model.campo', ['label'=>false, width'=>'resolve', 'style'=>'min-width: 200px;', 'ajax'=>['url'=>'http://site.com.br/cadastro/get_lista']]);
+ * echo $this->S2Form->input('Model.campo', ['label'=>false, 'width'=>'resolve', 'style'=>'min-width: 200px;', 'ajax'=>['url'=>'http://site.com.br/cadastro/get_lista']]);
  *
  */
 class S2FormHelper extends Select2AppHelper {
@@ -83,7 +83,7 @@ class S2FormHelper extends Select2AppHelper {
             $paramsSelect2['language']          = isset($params['language'])              ? $params['language']             : 'pt-BR';
             $paramsSelect2['placeholder']       = isset($params['placeholder'])           ? $params['placeholder']          : $id;
             $paramsSelect2['minimumInputLength']= isset($params['minimumInputLength'])    ? $params['minimumInputLength']   : 3;
-            $funcaoTrataRespostaSelect2         = isset($params['customFunctionResponse'])? $params['customFunctionResponse']   : 'retornaRespostaSelect2';
+            $funcaoTrataRespostaSelect2         = isset($params['customFunctionResponse'])? $params['customFunctionResponse']   : 'returnResponseSelect2';
 
             $paramsSelect2['ajax']['dataType']      = 'JSON';
             $paramsSelect2['ajax']['method']        = 'POST';
