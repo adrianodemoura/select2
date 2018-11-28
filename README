@@ -16,7 +16,7 @@ $ composer update
 
 In bootstrap.php:
 
-CakePlugin::load('Select2', ['bootstrap'=>true]);
+CakePlugin::load('Select2');
 
 in controller:
 
