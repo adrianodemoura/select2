@@ -33,6 +33,8 @@ or inside view:
 
 	$this->Helpers->load('Select2.S2Form');
 
-	echo $this->S2Form->input('Model.campo', ['label'=>false, 'width'=>'resolve', 'style'=>'min-width: 200px;', 'ajax'=>['url'=>'http://site.com.br/cadastro/get_lista']]);
+	echo $this->S2Form->input('Model.campo', ['label'=>false, 'width'=>'resolve', 'style'=>'min-width: 200px;', 'ajax'=>['url'=>'http://site.com/controller/get_list_select2']]);
 
 ?>
+
+- funciton get_list_select2 example:
