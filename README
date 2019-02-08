@@ -12,6 +12,10 @@ add in require line:
 
 "adrianodemoura/select2": "*"
 
+or
+
+$ composer require adrianodemoura/select2
+
 $ composer update
 
 - Usage
